@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1> Repositoris {{hero.id}} </h1>
+<div>
+<label>id:</label> {{hero.id}} </div>
+<div>
+  
+<label>Name</label> {{hero.name}} 
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="hero.name" placeholder="name"/>
+
+</div> 
+<ul>
+<li *ngFor='let repo of repos'>
+{{repo.id}} =>> {{repo.full_name}}
+</li>
+
+</ul>
